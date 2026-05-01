@@ -1,0 +1,330 @@
+ body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Empurra brand para esquerda e menu para direita */
+  align-items: center;           /* Alinha verticalmente ao centro */
+  padding: 1rem 5%;
+  background-color: #6B8E23;     /* Cor de fundo típica de academias */
+  color: #5C4033;
+  
+}
+
+.logo-img {
+  height: 100px;       /* Ajuste a altura conforme preferir */
+  width: auto;        /* Mantém a proporção da imagem sem distorcer */
+  object-fit: contain;
+  border-radius: 4px; /* Opcional: arredonda levemente as bordas do JPEG */
+}
+
+/* Garante que o nome e a imagem fiquem alinhados perfeitamente */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+
+
+.gym-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;                     /* Espaço entre os itens do menu */
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: #5C4033;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #d4af37;                /* Cor dourada para o hover */
+}
+
+.hero {
+  height: 100vh;           /* Faz a seção ocupar 100% da altura da tela */
+  position: relative; 
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center;      /* Centraliza o conteúdo verticalmente */
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  
+  /* Sua imagem e gradiente aqui */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/Jungle_gym.png');
+  background-position: center;
+  background-size: cover;
+  
+  filter: blur(2px); /* Ajuste o valor conforme desejar a suavidade */
+  transform: scale(1.1); /* Aumenta um pouco para não aparecer bordas brancas pelo blur */
+  z-index: -1; /* Joga para trás do conteúdo */
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+/* Container da Seção */
+.gym-section {
+    padding: 80px 10%;
+    background-color: #5C4033; 
+    
+    
+}
+
+/* Título Centralizado no Topo */
+.section-title {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: #6B8E23; 
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Flexbox para alinhar Lado a Lado */
+.content-wrapper {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between;
+    gap: 50px; /* Espaço entre imagem e texto */
+}
+
+/* Lado da Imagem */
+.image-box {
+    flex: 1; /* Ocupa metade do espaço */
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px #6B8E23; /* Detalhe estético de borda */
+}
+
+/* Lado do Texto */
+.text-box {
+    flex: 1; /* Ocupa a outra metade */
+}
+
+.text-box p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ccc;
+    font-family: 'Inter', sans-serif;
+    text-align: justify;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Empilha um embaixo do outro no celular */
+        text-align: center;
+    }
+}
+
+/* Container Principal */
+.schedule-section {
+    padding: 40px 20px;
+    background-color: #FAFAFA; /* Fundo escuro estilo gym */
+    color: black;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.table-container {
+    overflow-x: auto; /* Garante que funcione no celular */
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+th {
+    background-color: black;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: white;
+}
+
+/* Células */
+td {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    font-size: 0.95rem;
+}
+
+.time {
+    
+    color: black; /* Destaque para a hora */
+    background: white;
+}
+
+/* Cores por Categoria  */
+.class-fund {
+    background: white;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+} /* Azul para fundamentos */
+.class-all { background: white;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    }  /* Verde para todos os níveis */
+.class-adv { background: white;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    }  /* Amarelo/Dourado para avançado */
+.class-kids { background: white;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    } /* Laranja para crianças */
+.class-open { background: white;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.8rem; 
+    } /* Roxo para Open Mat */
+.empty { background: white;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-size: 0.8rem;
+     }
+
+/* Efeito de Hover para interatividade */
+tbody tr:hover {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.contact-container {
+  font-family: 'Inter', sans-serif;
+  max-width: 1200px; /* Aumentado para caber texto + mapa lado a lado */
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+/* Centraliza o título na seção inteira */
+.contact-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-title h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.0rem;
+  text-transform: uppercase;
+}
+
+/* Wrapper para colocar Texto e Mapa lado a lado */
+.contact-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+/* Coluna do Texto */
+.contact-text {
+  flex: 1; /* Ocupa metade do espaço ou proporcional */
+  color:rgb(125, 132, 132);
+}
+
+/* Coluna do Mapa */
+.contact-map {
+  flex: 1.2; 
+  border-radius: 20px;
+  overflow: hidden; /* Garante que o iframe respeite o border-radius */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contact-map iframe {
+  display: block; /* Remove espaços vazios abaixo do iframe */
+}
+
+/* Itens de contato individuais */
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.icone {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+/* Responsividade: No celular, empilha um embaixo do outro */
+@media (max-width: 768px) {
+  .contact-content-wrapper {
+    flex-direction: column;
+  }
+  
+  .contact-map {
+    width: 100%;
+  }
+}
+
+footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #6B8E23;
+            color: #5C4033;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+footer p {
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: center; /* Alinha horizontalmente ao centro da página */
+    gap: 10px; /* Cria um espaço entre a imagem e o texto */
+}
+
+footer img {
+    border-radius: 5px; /* Opcional: arredonda levemente as bordas do logo */
+}
