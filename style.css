@@ -413,10 +413,18 @@ tbody tr:hover {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-sizing: border-box;          
   }
+
+/* Sumir com espaços vazios da tabela (<td> completamente vazio, csomente com espaço ou com traço)*/
+  .table-container td:empty,
+  .table-container td[data-label=""]:empty {
+    display: none !important;
+  }          
 
   /* Estilização das linhas de dados dentro do card */
   .table-container td {
+    display: block;          
     text-align: right;
     padding: 10px 15px;
     border: none;
@@ -424,6 +432,7 @@ tbody tr:hover {
     position: relative;
     padding-left: 45%; /* Abre espaço para o dia da semana na esquerda */
     box-sizing: border-box;
+    min-height: 42px;          
   }
 
   .table-container td:last-child {
@@ -432,6 +441,7 @@ tbody tr:hover {
 
   /* Transforma a primeira célula (o Horário) no título do Card */
   .table-container td.time {
+    display: block !important; /* Força o título a aparecer sempre */          
     background-color: #333;
     color: #fff;
     text-align: center;
