@@ -171,6 +171,7 @@ table {
     overflow: hidden;
     display: table;        
 }
+
 .table-container thead {
   display: table-header-group;
 }
@@ -181,7 +182,8 @@ table {
 
 .table-container tr {
   display: table-row; 
-            
+}
+
 /* Cabeçalho */
 th {
     background-color: black;
@@ -214,31 +216,31 @@ td {
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 0.8rem;
-} /* Azul para fundamentos */
+} 
 .class-all { background: white;
     color: #666;
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 0.8rem;
-    }  /* Verde para todos os níveis */
+    }  
 .class-priv { background: white;
     color: #666;
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 0.8rem;
-    }  /* Amarelo/Dourado para avançado */
+    }  
 .class-ath { background: white;
     color: #666;
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 0.8rem;
-    } /* Laranja para crianças */
+    } 
 .class-open { background: white;
     color: #666;
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 0.8rem; 
-    } /* Roxo para Open Mat */
+    } 
 .empty { background: white;
     color: #666;
     padding: 5px 10px;
@@ -453,6 +455,7 @@ tbody tr:hover {
     font-weight: bold;
     color: #666;
   }
+}
 
 footer {
             text-align: center;
