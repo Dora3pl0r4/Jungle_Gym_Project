@@ -37,7 +37,6 @@ This project was built from scratch, using the core web technologies to ensure l
 - ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) **JavaScript** - Logic for the mobile hamburger menu toggle, basic form validations, and smooth scroll effects.
 
 ---
-
 ## ⚙️ How to Run the Project Locally
 
 If you want to download the code and run the website on your local machine for testing or studying, follow these steps:
@@ -50,3 +49,16 @@ $ git clone [https://github.com/Dora3pl0r4/Jungle_Gym_Project.git](https://githu
 
 # 2. Access the project folder
 $ cd Jungle_Gym_Project
+
+
+---
+
+✍️ Author
+
+Isadora Dantas
+
+Main Developer & Maintainer
+
+    GitHub: Dora3pl0r4
+
+    LinkedIn: [Isadora Martins Dantas]
