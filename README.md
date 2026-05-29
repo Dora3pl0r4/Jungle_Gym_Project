@@ -1,6 +1,6 @@
 # 🥋 Jungle Brazilian Jiu Jitsu Team
 
-> A clean, informative, and fully responsive website for the **Jungle Brazilian Jiu Jitsu Team**, developed to showcase the academy, training schedules, the coaching staff, and to make it easy for new students to get in touch.
+> A clean, informative, and fully responsive website for the **Jungle Brazilian Jiu Jitsu Team**, developed to showcase the gym, training schedules and to make it easy for new students to get in touch.
 
 ### 🚀 Live Project
 You can check out the live website in action by [clicking here](https://dora3pl0r4.github.io/Jungle_Gym_Project/).
