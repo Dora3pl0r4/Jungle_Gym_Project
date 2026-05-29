@@ -308,6 +308,74 @@ tbody tr:hover {
   }
 }
 
+/* BREAKDOWN FOR MOBILE NAVIGATION */
+@media (max-width: 768px) {
+  .navbar {
+    position: relative; /* Allows the dropdown to position itself correctly */
+    flex-direction: row; /* Keeps logo and hamburger on the same horizontal line */
+    justify-content: space-between;
+    padding: 1rem 20px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .gym-name {
+    font-size: 1.1rem; /* Keeps the name on one line alongside the logo */
+  }
+
+  /* Show the hamburger button only on mobile */
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: #5C4033;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  /* Transform the menu into a hidden dropdown box */
+  .menu {
+    display: none; /* Hides it by default */
+    position: absolute;
+    top: 100%; /* Pushes it directly below the navbar */
+    left: 0;
+    width: 100%;
+    background-color: #6B8E23; /* Matches your navbar color */
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 100;
+  }
+
+  /* When JS adds the .active class, show the dropdown */
+  .menu.active {
+    display: block;
+  }
+
+  /* Stack the navigation links vertically */
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .menu a {
+    font-size: 1.2rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Hide the hamburger button on Desktop */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
 footer {
             text-align: center;
             padding: 10px 0;
