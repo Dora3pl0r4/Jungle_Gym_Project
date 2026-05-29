@@ -169,8 +169,19 @@ table {
     background: white;
     border-radius: 8px;
     overflow: hidden;
+    display: table;        
+}
+.table-container thead {
+  display: table-header-group;
 }
 
+.table-container tbody {
+  display: table-row-group;
+}
+
+.table-container tr {
+  display: table-row; 
+            
 /* Cabeçalho */
 th {
     background-color: black;
@@ -179,6 +190,7 @@ th {
     font-size: 0.9rem;
     letter-spacing: 1px;
     color: white;
+    display: table-cell;        
 }
 
 /* Células */
@@ -186,6 +198,7 @@ td {
     padding: 15px;
     border-bottom: 1px solid #333;
     font-size: 0.95rem;
+    display: table-cell;        
 }
 
 .time {
