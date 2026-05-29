@@ -9,16 +9,16 @@ body {
   justify-content: space-between; /* Empurra brand para esquerda e menu para direita */
   align-items: center;           /* Alinha verticalmente ao centro */
   padding: 1rem 5%;
-  background-color: #6B8E23;     /* Cor de fundo típica de academias */
+  background-color: #6B8E23;     
   color: #5C4033;
   
 }
 
 .logo-img {
-  height: 100px;       /* Ajuste a altura conforme preferir */
-  width: auto;        /* Mantém a proporção da imagem sem distorcer */
+  height: 100px;       /* Ajustar altura */
+  width: auto;        /* Manter a proporção da imagem sem distorcer */
   object-fit: contain;
-  border-radius: 4px; /* Opcional: arredonda levemente as bordas do JPEG */
+  border-radius: 4px; /* arredonda levemente as bordas do JPEG */
 }
 
 /* Garante que o nome e a imagem fiquem alinhados perfeitamente */
@@ -54,7 +54,7 @@ body {
 }
 
 .menu a:hover {
-  color: #d4af37;                /* Cor dourada para o hover */
+  color: #d4af37;                
 }
 
 .hero {
@@ -73,14 +73,14 @@ body {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   
-  /* Sua imagem e gradiente aqui */
+  /* Gradiente da imagem */
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/Jungle_gym.png');
   background-position: center;
   background-size: cover;
   
-  filter: blur(2px); /* Ajuste o valor conforme desejar a suavidade */
-  transform: scale(1.1); /* Aumenta um pouco para não aparecer bordas brancas pelo blur */
-  z-index: -1; /* Joga para trás do conteúdo */
+  filter: blur(2px); 
+  transform: scale(1.1); 
+  z-index: -1; 
 }
 
 .hero-content h1 {
@@ -89,7 +89,7 @@ body {
   text-transform: uppercase;
 }
 
-/* Container da Seção */
+
 .gym-section {
     padding: 80px 10%;
     background-color: #5C4033; 
@@ -107,7 +107,7 @@ body {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* Flexbox para alinhar Lado a Lado */
+/* Flexbox para alinhar lado a lado */
 .content-wrapper {
     display: flex;
     align-items: center; /* Centraliza verticalmente */
@@ -150,7 +150,7 @@ body {
 /* Container Principal */
 .schedule-section {
     padding: 40px 20px;
-    background-color: #FAFAFA; /* Fundo escuro estilo gym */
+    background-color: #FAFAFA; 
     color: black;
     font-family: 'Plus Jakarta Sans', sans-serif;
     text-align: center;
@@ -208,13 +208,13 @@ td {
     border-radius: 10px;
     font-size: 0.8rem;
     }  /* Verde para todos os níveis */
-.class-adv { background: white;
+.class-priv { background: white;
     color: #666;
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 0.8rem;
     }  /* Amarelo/Dourado para avançado */
-.class-kids { background: white;
+.class-ath { background: white;
     color: #666;
     padding: 5px 10px;
     border-radius: 10px;
@@ -297,7 +297,7 @@ tbody tr:hover {
   margin-right: 15px;
 }
 
-/* Responsividade: No celular, empilha um embaixo do outro */
+/* Responsividade */
 @media (max-width: 768px) {
   .contact-content-wrapper {
     flex-direction: column;
@@ -308,11 +308,11 @@ tbody tr:hover {
   }
 }
 
-/* BREAKDOWN FOR MOBILE NAVIGATION */
+/* Responsividade */
 @media (max-width: 768px) {
   .navbar {
-    position: relative; /* Allows the dropdown to position itself correctly */
-    flex-direction: row; /* Keeps logo and hamburger on the same horizontal line */
+    position: relative; /* Permite que o dropdown se posicione corretamente */
+    flex-direction: row; /* mantém o logo e o menu na mesma linha horizontal */
     justify-content: space-between;
     padding: 1rem 20px;
   }
@@ -322,10 +322,10 @@ tbody tr:hover {
   }
 
   .gym-name {
-    font-size: 1.1rem; /* Keeps the name on one line alongside the logo */
+    font-size: 1.1rem; /* Mantém o nome em uma linha do lado do logo */
   }
 
-  /* Show the hamburger button only on mobile */
+  /* mostra o menu tipo hamburguer no dispositivo movel */
   .menu-toggle {
     display: block;
     background: none;
@@ -336,14 +336,14 @@ tbody tr:hover {
     padding: 5px;
   }
 
-  /* Transform the menu into a hidden dropdown box */
+  /* Transforma menu em dropdown box */
   .menu {
-    display: none; /* Hides it by default */
+    display: none; 
     position: absolute;
-    top: 100%; /* Pushes it directly below the navbar */
+    top: 100%; 
     left: 0;
     width: 100%;
-    background-color: #6B8E23; /* Matches your navbar color */
+    background-color: #6B8E23; 
     padding: 20px 0;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     z-index: 100;
@@ -354,7 +354,7 @@ tbody tr:hover {
     display: block;
   }
 
-  /* Stack the navigation links vertically */
+  /* Empilha os links de navegação verticalmente*/
   .menu ul {
     flex-direction: column;
     align-items: center;
@@ -369,12 +369,77 @@ tbody tr:hover {
   }
 }
 
-/* Hide the hamburger button on Desktop */
+/* Esconde os botões do menu */
 @media (min-width: 769px) {
   .menu-toggle {
     display: none;
   }
 }
+
+@media screen and (max-width: 768px) {
+  
+  /* Esconde o cabeçalho de dias da semana tradicional */
+  .table-container thead {
+    display: none;
+  }
+
+  .table-container table, 
+  .table-container tbody, 
+  .table-container tr, 
+  .table-container td {
+    display: block;
+    width: 100%;
+  }
+
+  /* Cada linha (tr) vira um "Card" de horário */
+  .table-container tr {
+    margin-bottom: 25px;
+    border: 2px solid #333; /* Destaca o bloco do horário */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  /* Estilização das linhas de dados dentro do card */
+  .table-container td {
+    text-align: right;
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 45%; /* Abre espaço para o dia da semana na esquerda */
+    box-sizing: border-box;
+  }
+
+  .table-container td:last-child {
+    border-bottom: none;
+  }
+
+  /* Transforma a primeira célula (o Horário) no título do Card */
+  .table-container td.time {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding-left: 15px;
+    font-size: 1.1rem;
+  }
+
+  /* Esconde o texto "Time" apenas no card de título para não ficar repetitivo */
+  .table-container td.time::before {
+    display: none;
+  }
+
+  /* puxa o nome do dia da semana (data-label) para a esquerda */
+  .table-container td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    width: 40%;
+    text-align: left;
+    font-weight: bold;
+    color: #666;
+  }
 
 footer {
             text-align: center;
@@ -388,9 +453,9 @@ footer {
 
 footer p {
     display: flex;
-    align-items: center; /* Alinha verticalmente ao centro */
-    justify-content: center; /* Alinha horizontalmente ao centro da página */
-    gap: 10px; /* Cria um espaço entre a imagem e o texto */
+    align-items: center; /
+    justify-content: center; 
+    gap: 10px; 
 }
 
 footer img {
