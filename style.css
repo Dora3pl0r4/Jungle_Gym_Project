@@ -89,6 +89,36 @@ body {
   text-transform: uppercase;
 }
 
+.contact-link {
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center;     /* Centraliza verticalmente */
+            height: 400px;           /* Altura da seção (ajuste como quiser) */
+            
+        }
+
+        /* Estilo do botão do WhatsApp */
+        .btn-contact {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;               /* Espaço entre o ícone e o texto */
+            background-color: #25D366; /* Verde oficial do WhatsApp */
+            color: white;
+            text-decoration: none;   /* Remove o sublinhado padrão de link */
+            padding: 15px 30px;      /* Espaçamento interno (tamanho do botão) */
+            border-radius: 50px;     /* Deixa as bordas arredondadas */
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Sombra suave */
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        /* Efeito de passar o mouse por cima (Hover) */
+        .btn-whatsapp:hover {
+            background-color: #20ba5a; /* Verde um pouco mais escuro */
+            transform: scale(1.05);    /* Dá um leve zoom ao passar o mouse */
+        }
 
 .gym-section {
     padding: 80px 10%;
@@ -286,6 +316,61 @@ tbody tr:hover {
 .contact-text {
   flex: 1; /* Ocupa metade do espaço ou proporcional */
   color:rgb(125, 132, 132);
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;         /* Espaço entre o botão do Facebook e do WhatsApp */
+  margin-top: 15px;  /* Espaço logo abaixo dos horários */
+}
+
+/* Estilização padrão dos botões clicáveis */
+.btn-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  
+  /* Força a seta a virar a mãozinha de clique */
+  cursor: pointer; 
+}
+
+/* Tamanho fixo para as imagens dentro dos botões */
+.btn-social img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Botão do Facebook */
+.btn-social.btn-facebook {
+  background-color: #f0f2f5;
+  color: #1877F2;
+  border: 1px solid #1877F2;
+}
+
+.btn-social.btn-facebook:hover {
+  background-color: #1877F2;
+  color: #ffffff;
+  transform: translateY(-2px); /* Efeito sutil de flutuar */
+}
+
+/* Botão do WhatsApp */
+.btn-social.btn-whatsapp {
+  background-color: #e8f9ee;
+  color: #25D366;
+  border: 1px solid #25D366;
+}
+
+.btn-social.btn-whatsapp:hover {
+  background-color: #25D366;
+  color: #ffffff;
+  transform: translateY(-2px); /* Efeito sutil de flutuar */
 }
 
 /* Coluna do Mapa */
