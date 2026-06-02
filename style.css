@@ -485,8 +485,7 @@ tbody tr:hover {
 
   .table-container table, 
   .table-container tbody, 
-  .table-container tr, 
-  .table-container td {
+  .table-container tr {
     display: block;
     width: 100%;
   }
@@ -511,7 +510,7 @@ tbody tr:hover {
   .table-container td {
     display: block;          
     text-align: right;
-    padding: 10px 15px;
+    padding: 12px 15px;
     border: none;
     border-bottom: 1px solid #eee;
     position: relative;
@@ -536,7 +535,7 @@ tbody tr:hover {
 
   /* Esconde o texto "Time" apenas no card de título para não ficar repetitivo */
   .table-container td.time::before {
-    display: none;
+    display: none !important;
   }
 
   /* puxa o nome do dia da semana (data-label) para a esquerda */
@@ -544,11 +543,11 @@ tbody tr:hover {
     content: attr(data-label);
     position: absolute;
     left: 15px;
-    top: 10px;
+    top: 12px;
     width: 40%;
     text-align: left;
     font-weight: bold;
-    color: #666;
+    color: #333;
   }
 }
 
